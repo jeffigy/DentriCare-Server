@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const patientsController = require("../controllers/patientsController");
 const verifyJWT = require("../middleware/verifyJWT");
-
 router.use(verifyJWT);
 
 router
